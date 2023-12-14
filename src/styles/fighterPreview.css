@@ -11,3 +11,25 @@
 .fighter-preview___left {
   align-items: flex-start;
 }
+
+.fighter-preview__fighter-img
+{
+  width: 250px;
+  height: 400px;
+}
+
+.fighter-preview__fighter-info
+{
+  color: white;
+  height: fit-content;
+}
+
+.fighter-preview__fighter-img-flipped
+{
+  transform: rotateY(180deg);
+}
+
+.fighter-preview__fighter-info-right
+{
+  text-align: right;
+}
