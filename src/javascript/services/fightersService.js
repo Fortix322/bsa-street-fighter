@@ -16,7 +16,7 @@ class FighterService {
 
     async getFighterDetails(id) {
         try {
-            const apiResult = await callApi(`${this.detailedInfoEndpoint}${id}.json`);
+            const apiResult = await callApi(`${this.#detailedInfoEndpoint}${id}.json`);
             return apiResult;
         } catch (error) {
             throw error;
