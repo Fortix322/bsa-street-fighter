@@ -107,14 +107,14 @@ export async function fight(firstFighter, secondFighter) {
 
             switch (event.code) {
                 case controls.PlayerOneAttack:
-                    {
+                    if (!firstBlocking) {
                         const damage = getDamage(firstFighter, secondBlocking ? secondFighter : null);
                         secondHealth = doDamage(secondFighter, damage, secondHealth, 'right');
                     }
                     break;
 
                 case controls.PlayerTwoAttack:
-                    {
+                    if (!secondBlocking) {
                         const damage = getDamage(secondFighter, firstBlocking ? firstFighter : null);
                         firstHealth = doDamage(firstFighter, damage, firstHealth, 'left');
                     }
